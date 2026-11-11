@@ -1,6 +1,6 @@
 // My Finances service worker: keeps the app working offline.
 // Bump VERSION whenever you upload new app files.
-const VERSION = 'my-finances-v1.0.2';
+const VERSION = 'my-finances-v2.0.0';
 const ASSETS = [
   './', './index.html', './manifest.webmanifest',
   './icon-192.png', './icon-512.png', './maskable-512.png',
