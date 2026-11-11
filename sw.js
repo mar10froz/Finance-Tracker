@@ -1,12 +1,12 @@
 // My Finances service worker: keeps the app working offline.
 // Bump VERSION whenever you upload new app files.
-const VERSION = 'my-finances-v1.0.0';
+const VERSION = 'my-finances-v1.0.1';
 const ASSETS = [
   './', './index.html', './manifest.webmanifest',
-  './icons/icon-192.png', './icons/icon-512.png', './icons/maskable-512.png',
-  './fonts/manrope-latin-400-normal.woff2', './fonts/manrope-latin-500-normal.woff2',
-  './fonts/manrope-latin-600-normal.woff2', './fonts/manrope-latin-700-normal.woff2',
-  './fonts/manrope-latin-800-normal.woff2'
+  './icon-192.png', './icon-512.png', './maskable-512.png',
+  './manrope-latin-400-normal.woff2', './manrope-latin-500-normal.woff2',
+  './manrope-latin-600-normal.woff2', './manrope-latin-700-normal.woff2',
+  './manrope-latin-800-normal.woff2'
 ];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
